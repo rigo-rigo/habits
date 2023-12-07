@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Micro-habits</title>
+    <link rel="stylesheet" href="/css/styles.css" />
+    <script src="/js/script.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>Micro-Habits tracker</h1>
+    </header>
+
+    <div id="sidebar">
+      <a href="#">Home</a>
+      <br />
+      <br />
+      <a href="#">Habits</a>
+      <br />
+      <br />
+      <a href="#">Statistics</a>
+    </div>
+
+    <div class="level-box">
+      <h1>Level 1</h1>
+    </div>
+
+    <form>
+      <h3>Monday</h3>
+      <label>
+        <input type="checkbox" name="Meditation" /> 10 Minutes of Meditation 🧘
+      </label>
+      <br />
+      <label>
+        <input type="checkbox" name="Workout" /> 15 Minutes of Workout 🏋️‍♂️
+      </label>
+      <br />
+      <label>
+        <input type="checkbox" name="Reading" /> 10 Minutes of Reading 👀📕
+      </label>
+      <br />
+      <label>
+        <input type="checkbox" name="Journaling" /> 5 Minutes of Journaling 📘
+      </label>
+
+      <button type="button" onclick="increaseProgressBar()">Submit</button>
+    </form>
+    <br />
+    <form>
+      <h3>Tuesday</h3>
+      <label>
+        <input type="checkbox" name="Meditation" /> 10 Minutes of Meditation 🧘
+      </label>
+      <br />
+      <label>
+        <input type="checkbox" name="Workout" /> 15 Minutes of Workout 🏋️‍♂️
+      </label>
+      <br />
+      <label>
+        <input type="checkbox" name="Reading" /> 10 Minutes of Reading 👀📕
+      </label>
+      <br />
+      <label>
+        <input type="checkbox" name="Journaling" /> 5 Minutes of Journaling 📘
+      </label>
+
+      <button type="button" onclick="showSelectedHabits()">Submit</button>
+    </form>
+
+    <div class="progress-container">
+      <div class="progress-bar" id="myProgressBar"></div>
+    </div>
+
+    <button class="submit-button" onclick="increaseProgressBar()">
+      Submit
+    </button>
+  </body>
+</html>
